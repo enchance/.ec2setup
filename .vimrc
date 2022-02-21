@@ -1,11 +1,46 @@
-color elflord
-set hlsearch
-set ignorecase
-set number
-set autoindent
-set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""     
+"               
+"               ██╗   ██╗██╗███╗   ███╗██████╗  ██████╗
+"               ██║   ██║██║████╗ ████║██╔══██╗██╔════╝
+"               ██║   ██║██║██╔████╔██║██████╔╝██║     
+"               ╚██╗ ██╔╝██║██║╚██╔╝██║██╔══██╗██║     
+"                ╚████╔╝ ██║██║ ╚═╝ ██║██║  ██║╚██████╗
+"                 ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
+"               
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+colorscheme elflord
+set cursorline
+set mouse=a
 
 syntax on
-set cursorline
-:hi CursorLine cterm=NONE ctermbg=black
-set mouse=a
+filetype on
+
+set number
+set linebreak
+set showbreak=+++
+set textwidth=100
+set showmatch
+set visualbell
+ 
+set hlsearch
+set smartcase
+set ignorecase
+set incsearch
+ 
+set autoindent
+set shiftwidth=4
+set smartindent
+set smarttab
+set softtabstop=4
+set tabstop=4
+set expandtab
+set nobackup
+set scrolloff=10
+ 
+set ruler 
+ 
+set undolevels=1000   
+set backspace=indent,eol,start
+
+
