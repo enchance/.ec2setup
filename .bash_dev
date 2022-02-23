@@ -11,8 +11,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 
 # virtualenvwrapper
 export WORKON_HOME=$WWWPATH/venv
-export VIRTUALENVWRAPPER_PYTHON=~/.pyenv/shims/python
-export VIRTUALENVWRAPPER_VIRTUALENV=~/.pyenv/shims/virtualenv
+export VIRTUALENVWRAPPER_PYTHON=$HOME/.pyenv/shims/python
+export VIRTUALENVWRAPPER_VIRTUALENV=$HOME/.pyenv/shims/virtualenv
 export PROJECT_HOME=$WWWPATH
 export PIPENV_SKIP_LOCK=true
-#source /home/enchance/.pyenv/versions/3.9.9/bin/virtualenvwrapper.sh
