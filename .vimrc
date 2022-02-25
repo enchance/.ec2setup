@@ -1,12 +1,19 @@
 call plug#begin()
+    Plug 'arcticicestudio/nord-vim'
     Plug 'scrooloose/nerdtree'
+    Plug 'vim-airline/vim-airline'
+    Plug 'frazrepo/vim-rainbow'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'leafgarland/typescript-vim'
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+    Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 nmap <C-S-Up> :m -2<CR>
 nmap <C-S-Down> :m +1<CR>
+nnoremap <F9> :NERDTreeToggle<CR>
 
-
-colorscheme elflord
+colorscheme nord
 set cursorline
 set mouse=a
 
@@ -38,3 +45,11 @@ set scrolloff=10
 set ruler  
 set undolevels=1000   
 set backspace=indent,eol,start
+set encoding=UTF-8
+
+let NERDTreeShowHidden=1
+
+" after a re-source, fix syntax matching issues (concealing brackets):
+if exists('g:loaded_webdevicons')
+    call webdevicons#refresh()
+endif
