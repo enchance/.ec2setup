@@ -5,6 +5,7 @@ call plug#begin()
     Plug 'frazrepo/vim-rainbow'
     Plug 'airblade/vim-gitgutter'
     Plug 'leafgarland/typescript-vim'
+    Plug 'chr4/nginx.vim'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'ryanoasis/vim-devicons'
 call plug#end()
