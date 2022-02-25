@@ -1,13 +1,10 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""     
-"               
-"               ██╗   ██╗██╗███╗   ███╗██████╗  ██████╗
-"               ██║   ██║██║████╗ ████║██╔══██╗██╔════╝
-"               ██║   ██║██║██╔████╔██║██████╔╝██║     
-"               ╚██╗ ██╔╝██║██║╚██╔╝██║██╔══██╗██║     
-"                ╚████╔╝ ██║██║ ╚═╝ ██║██║  ██║╚██████╗
-"                 ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
-"               
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call plug#begin()
+    Plug 'scrooloose/nerdtree'
+call plug#end()
+
+nmap <C-S-Up> :m -2<CR>
+nmap <C-S-Down> :m +1<CR>
+
 
 colorscheme elflord
 set cursorline
@@ -38,9 +35,6 @@ set expandtab
 set nobackup
 set scrolloff=10
  
-set ruler 
- 
+set ruler  
 set undolevels=1000   
 set backspace=indent,eol,start
-
-
